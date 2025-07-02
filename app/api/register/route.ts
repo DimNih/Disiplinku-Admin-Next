@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server"
 import { db } from "@/lib/firebase"
 import { ref, get, push, set } from "firebase/database"
-import bcrypt from "bcrypt"
+import bcrypt from "bcryptjs"; 
 
 export async function POST(request: Request) {
   try {
